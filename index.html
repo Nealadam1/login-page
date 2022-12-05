@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login Page</title>
+</head>
+<body onload="onInit()">
+    
+    <div class="sign-in-container">
+        
+        <form class="login-form" onsubmit="onDoLogin(event)">
+            <h1>Sign in</h1>
+            <p>Username:</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <br>
+            <Button class="login-btn">Login</Button>
+        </form>
+    </div>
+
+    <div class="main-container">
+        <!-- <img src="" alt="">
+        <button class="admin-btn">Admin</button>
+        <button class="logout-btn">Logout</button> -->
+    </div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/main-service.js"></script>
+    <script src="js/main-controller.js"></script>
+   
+</body>
+</html>
